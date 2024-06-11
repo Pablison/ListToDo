@@ -8,7 +8,12 @@
 <script setup>
 import ListTasks from './ListTasks.vue';
 import {useTaskStore} from '@/stores/task'
+import { onMounted } from 'vue';
 
 const taskStore = useTaskStore();
+
+onMounted(()=>{
+    taskStore.getTasks();
+})
 
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div class="text-center pa-4">
-        <v-dialog v-model="props.dialog" max-width="400" persistent>
+        <v-dialog v-model="taskStore.showDialogTaskFields" max-width="400" persistent>
             <v-card prepend-icon="mdi-map-marker">
                 <v-card-title>
                     Edit Task
@@ -12,7 +12,7 @@
                 <template v-slot:actions>
                     <v-spacer></v-spacer>
 
-                    <v-btn @click="$emit('toogle')">
+                    <v-btn @click="taskStore.toogleEdit()">
                         Ok
                     </v-btn>
                 </template>
@@ -22,10 +22,11 @@
 </template>
 
 <script setup>
-import { ref, defineProps } from 'vue';
+import { defineProps } from 'vue';
+import { useTaskStore } from '@/stores/task'
 
+const taskStore = useTaskStore();
 const props = defineProps({
-    dialog: Boolean,
     task: Object
 })
 

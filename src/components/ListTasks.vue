@@ -38,10 +38,9 @@
             </v-list-item>
 
         </v-list>
-        <DialogTaskField :dialog="taskStore.showDialogTaskFields" @toogle="taskStore.toogleEdit"
+        <DialogTaskField @toogle="taskStore.toogleEdit"
         :task="taskStore.tasks[taskStore.indexTaskSelected]" />
-        <DialogDelete :dialog="taskStore.showDialogDelete" @toogleDelete="taskStore.toogleDelete"
-            @deleteTask="taskStore.deleteTask" />
+        <DialogDelete />
     </div>
 </template>
 
