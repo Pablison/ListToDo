@@ -12,7 +12,7 @@
                 <template v-slot:actions>
                     <v-spacer></v-spacer>
 
-                    <v-btn @click="taskStore.toogleEdit()">
+                    <v-btn @click="taskStore.toogleEdit()" color="primary-darken-1" variant="elevated">
                         Ok
                     </v-btn>
                 </template>
