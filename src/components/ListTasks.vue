@@ -3,11 +3,11 @@
         <v-list lines="three" select-strategy="classic">
             <v-list-subheader>General</v-list-subheader>
 
-            <v-list-item v-for="(task, index) in taskStore.tasks" :key="index" :value="index">
-                <template v-slot:prepend="{ isActive }">
+            <v-list-item v-for="(task, index) in taskStore.tasks" :key="index" :value="index" @click="taskStore.toogleDoneTask(index)">
+                <template v-slot:prepend="{ }">
 
                     <v-list-item-action start>
-                        <v-checkbox-btn :model-value="isActive"></v-checkbox-btn>
+                        <v-checkbox-btn :model-value="task.done"></v-checkbox-btn>
                     </v-list-item-action>
                 </template>
 
@@ -38,8 +38,7 @@
             </v-list-item>
 
         </v-list>
-        <DialogTaskField @toogle="taskStore.toogleEdit"
-        :task="taskStore.tasks[taskStore.indexTaskSelected]" />
+        <DialogTaskField @toogle="taskStore.toogleEdit" :task="taskStore.tasks[taskStore.indexTaskSelected]" />
         <DialogDelete />
     </div>
 </template>
