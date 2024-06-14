@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-list lines="three" select-strategy="classic">
-            <v-list-subheader>General</v-list-subheader>
+            <v-list-subheader>Tasks</v-list-subheader>
 
             <v-list-item v-for="(task, index) in taskStore.tasks" :key="index" :value="index" @click="taskStore.toogleDoneTask(index)">
                 <template v-slot:prepend="{ }">
