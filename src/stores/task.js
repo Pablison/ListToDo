@@ -5,16 +5,7 @@ const alertStore = useAlertStore();
 
 export const useTaskStore = defineStore('task', {
     state: () => ({
-        tasks: [
-            {
-                title: "Estudar Vue",
-                description: "Estudos com Vue e Vuetify"
-            },
-            {
-                title: "Documentação",
-                description: "Estudos com Vue e Vuetify"
-            }
-        ],
+        tasks: [],
         titleTaskCreating: "",
         showDialogDelete: false,
         indexTaskSelected: 0,
