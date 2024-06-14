@@ -11,7 +11,7 @@
                         No
                     </v-btn>
 
-                    <v-btn  @click="taskStore.deleteTask" variant="outlined" color="red-darken-1">
+                    <v-btn  @click="taskStore.deleteTask()" variant="outlined" color="red-darken-1">
                         Yes
                     </v-btn>
                 </template>

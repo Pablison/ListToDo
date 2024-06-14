@@ -1,16 +1,18 @@
 <template>
     <div class="alert-notification">
-        <v-alert
-            text="Task created success"
-            type="success"
-            closable
-            class="animate__animated animate__bounceIn"   >
+        <v-alert :text="alertStore.text" 
+                 :type="alertStore.type" 
+                 closable class="animate__animated animate__bounceIn">
         </v-alert>
     </div>
 </template>
 
 <script setup>
-    import 'animate.css';
+import 'animate.css';
+import { useAlertStore } from "@/stores/alert";
+
+const alertStore = useAlertStore();
+
 </script>
 
 <style scoped>
