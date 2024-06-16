@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a>
-    <img src="../assets/logo.png" alt="Logo" width="80" height="80">
+    <img src="./src/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">README-To Do List</h3>
@@ -54,17 +54,7 @@ Pablison Rodrigues Viana - pablisonviana@gmail.com
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/pablisonrodrigues
-[screenshot]: ../assets/todolist.JPG
+[screenshot]: ./src/assets/todolist.JPG
 
 [Vue-shield]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
